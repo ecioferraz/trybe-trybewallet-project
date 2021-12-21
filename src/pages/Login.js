@@ -61,7 +61,7 @@ class Login extends Component {
               { this.handleInput('password-input', 'Senha', 'password', password) }
             </div>
             <Link
-              to="/carteira"
+              to="/trybe-trybewallet-project/carteira"
               style={ (this.disableBtn()) ? { pointerEvents: 'none' } : null } // ref https://newbedev.com/easier-way-to-to-disable-link-in-react
             >
               <button

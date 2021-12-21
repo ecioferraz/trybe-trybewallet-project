@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/trybe-trybewallet-project/static/css/main.7b5394ff.chunk.css",
+    "main.js": "/trybe-trybewallet-project/static/js/main.00f57dce.chunk.js",
+    "main.js.map": "/trybe-trybewallet-project/static/js/main.00f57dce.chunk.js.map",
+    "runtime-main.js": "/trybe-trybewallet-project/static/js/runtime-main.01005813.js",
+    "runtime-main.js.map": "/trybe-trybewallet-project/static/js/runtime-main.01005813.js.map",
+    "static/css/2.e4d55abd.chunk.css": "/trybe-trybewallet-project/static/css/2.e4d55abd.chunk.css",
+    "static/js/2.f57281ac.chunk.js": "/trybe-trybewallet-project/static/js/2.f57281ac.chunk.js",
+    "static/js/2.f57281ac.chunk.js.map": "/trybe-trybewallet-project/static/js/2.f57281ac.chunk.js.map",
+    "index.html": "/trybe-trybewallet-project/index.html",
+    "precache-manifest.0a413a05177b26d81f4434f3a20d37e7.js": "/trybe-trybewallet-project/precache-manifest.0a413a05177b26d81f4434f3a20d37e7.js",
+    "service-worker.js": "/trybe-trybewallet-project/service-worker.js",
+    "static/css/2.e4d55abd.chunk.css.map": "/trybe-trybewallet-project/static/css/2.e4d55abd.chunk.css.map",
+    "static/css/main.7b5394ff.chunk.css.map": "/trybe-trybewallet-project/static/css/main.7b5394ff.chunk.css.map",
+    "static/js/2.f57281ac.chunk.js.LICENSE.txt": "/trybe-trybewallet-project/static/js/2.f57281ac.chunk.js.LICENSE.txt",
+    "static/media/login.css": "/trybe-trybewallet-project/static/media/Business_Startup01.dc74ebcc.jpg",
+    "static/media/wallet.css": "/trybe-trybewallet-project/static/media/Businessmen_are_trying_to_push_forward_the_icon_Dollar_money_up.9f1b1013.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01005813.js",
+    "static/css/2.e4d55abd.chunk.css",
+    "static/js/2.f57281ac.chunk.js",
+    "static/css/main.7b5394ff.chunk.css",
+    "static/js/main.00f57dce.chunk.js"
+  ]
+}

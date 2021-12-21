@@ -7,8 +7,8 @@ import './App.css';
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={ Login } />
-      <Route exact path="/carteira" component={ Wallet } />
+      <Route exact path="/trybe-trybewallet-project/" component={ Login } />
+      <Route exact path="/trybe-trybewallet-project/carteira" component={ Wallet } />
     </Switch>
   );
 }

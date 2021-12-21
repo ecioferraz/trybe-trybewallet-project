@@ -1,58 +1,58 @@
-header {
+/* header {
   background-color: #f1f1f1;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem 0;
-}
+} */
 
-ul {
+/* ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-}
+} */
 
-.logo {
+/* .logo {
   flex: 0 1 100%;
-}
+} */
 
-.user-info {
+/* .user-info {
   flex: 0 1 30%;
-}
+} */
 
-.login-form {
+/* .login-form {
   height: 100%;
   margin: auto;
   max-width: 330px;
   padding: 15px;
   width: 100%;
-}
+} */
 
-.login-form .loginBtn {
+/* .login-form .loginBtn {
   margin-top: 10px;
   width: 100%;
-}
+} */
 
-.expenses-form {
+/* .expenses-form {
   background-color: #f1f1f1;
-}
+} */
 
-.expensesInput {
+/* .expensesInput {
   align-items: center;
   display: flex;
   justify-content: space-around;
   padding: 25px;
-}
+} */
 
-.expensesInput input , select {
+/* .expensesInput input , select {
   max-width: 530px;
-}
+} */
 
-.expensesInput button {
+/* .expensesInput button {
   max-height: 30px;
-}
+} */
 
-.expenseBtn {
+/* .expenseBtn {
   margin-right: 10px;
-}
+} */

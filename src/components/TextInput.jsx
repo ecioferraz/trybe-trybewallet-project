@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { Label, Input } from 'reactstrap';
 
 export default class TextInput extends Component {
   render() {
-    const { label, type, name, value, onChange, placeholder, dataTestId } = this.props;
+    const { labelText, type, name, value,
+      onChange, placeholder, dataTestId } = this.props;
+
     return (
       <>
-        <Label htmlFor={ name }>
-          { label }
+        <label htmlFor={ name }>
+          { labelText }
           {' '}
-        </Label>
-        <Input
+        </label>
+        <input
           type={ type }
           name={ name }
           value={ value }
@@ -19,7 +20,6 @@ export default class TextInput extends Component {
           id={ name }
           placeholder={ placeholder }
           data-testid={ dataTestId }
-          bsSize="sm"
         />
       </>
     );
@@ -27,7 +27,7 @@ export default class TextInput extends Component {
 }
 
 TextInput.propTypes = {
-  label: PropTypes.string,
+  labelText: PropTypes.string,
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([
@@ -40,7 +40,7 @@ TextInput.propTypes = {
 };
 
 TextInput.defaultProps = {
-  label: '',
+  labelText: '',
   placeholder: '',
   dataTestId: '',
 };

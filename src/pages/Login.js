@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Button, Form, FormGroup } from 'reactstrap';
-// ref https://www.youtube.com/watch?v=XHPL-rX9m-Q
 import { login as loginAction } from '../actions';
 import TextInput from '../components/TextInput';
+import '../styles/login.css';
 
 class Login extends Component {
   constructor(props) {
@@ -32,49 +31,55 @@ class Login extends Component {
     return disable;
   }
 
+  handleInput(dataTestId, placeholder, type, value) {
+    return (
+      <TextInput
+        className="login-input"
+        dataTestId={ dataTestId }
+        htmlFor={ type }
+        placeholder={ placeholder }
+        name={ type }
+        onChange={ this.handleChange }
+        type={ type }
+        value={ value }
+      />
+    );
+  }
+
   render() {
     const { email, password } = this.state;
     const { login } = this.props;
     return (
-      <Form className="login-form">
-        <FormGroup>
-          <TextInput
-            type="email"
-            name="email"
-            value={ email }
-            htmlFor="email"
-            placeholder="Email"
-            dataTestId="email-input"
-            onChange={ this.handleChange }
-          />
-        </FormGroup>
-        <FormGroup>
-          <TextInput
-            type="password"
-            name="password"
-            value={ password }
-            htmlFor="password"
-            placeholder="Senha"
-            dataTestId="password-input"
-            onChange={ this.handleChange }
-          />
-        </FormGroup>
-        <Link
-          to="/carteira"
-          style={ (this.disableBtn()) ? { pointerEvents: 'none' } : null }
-          // ref https://newbedev.com/easier-way-to-to-disable-link-in-react
-        >
-          <Button
-            className="loginBtn"
-            color="primary"
-            type="button"
-            disabled={ this.disableBtn() }
-            onClick={ () => login({ email }) }
+      <main className="landing-page">
+        <form className="login-form">
+          <h6 className="greetings">Olá! Faça seu login:</h6>
+          <div className="input-container">
+            { this.handleInput('email-input', 'Email', 'email', email) }
+          </div>
+          <div className="input-container">
+            { this.handleInput('password-input', 'Senha', 'password', password) }
+          </div>
+          <Link
+            to="/carteira"
+            style={ (this.disableBtn()) ? { pointerEvents: 'none' } : null } // ref https://newbedev.com/easier-way-to-to-disable-link-in-react
           >
-            Entrar
-          </Button>
-        </Link>
-      </Form>
+            <button
+              className="login-btn"
+              color="primary"
+              type="button"
+              disabled={ this.disableBtn() }
+              onClick={ () => login({ email }) }
+            >
+              Entrar
+            </button>
+          </Link>
+        </form>
+        <footer className="image-credit">
+          <a href="https://www.vecteezy.com/free-vector/finance">
+            Finance Vectors by Vecteezy
+          </a>
+        </footer>
+      </main>
     );
   }
 }

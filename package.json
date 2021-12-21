@@ -1,4 +1,5 @@
 {
+  "homepage": "https:\/\/ecioferraz.github.io/trybe-trybewallet-project",
   "name": "sd-0x-project-trybewallet",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "@testing-library/react": "10.0.4",
     "@testing-library/user-event": "7.2.1",
     "bootstrap": "^5.1.1",
+    "gh-pages": "^3.2.3",
     "react": "^16.13.1",
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "^16.13.1",
@@ -23,6 +25,8 @@
     "stylelint-order": "4.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

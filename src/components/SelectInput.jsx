@@ -3,14 +3,15 @@ import React, { Component } from 'react';
 
 export default class SelectInput extends Component {
   render() {
-    const { labelText, name, value, options, onChange } = this.props;
+    const { className, labelText, name, value, options, onChange } = this.props;
     return (
       <>
-        <label htmlFor={ name } className="mr-sm-2">
+        <label htmlFor={ name }>
           { labelText }
           {' '}
         </label>
         <select
+          className={ className }
           type="select"
           name={ name }
           value={ value }
@@ -27,6 +28,7 @@ export default class SelectInput extends Component {
 }
 
 SelectInput.propTypes = {
+  className: PropTypes.string.isRequired,
   labelText: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([

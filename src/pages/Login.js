@@ -50,36 +50,38 @@ class Login extends Component {
     const { email, password } = this.state;
     const { login } = this.props;
     return (
-      <main className="landing-page">
-        <form className="login-form">
-          <h6 className="greetings">Olá! Faça seu login:</h6>
-          <div className="input-container">
-            { this.handleInput('email-input', 'Email', 'email', email) }
-          </div>
-          <div className="input-container">
-            { this.handleInput('password-input', 'Senha', 'password', password) }
-          </div>
-          <Link
-            to="/carteira"
-            style={ (this.disableBtn()) ? { pointerEvents: 'none' } : null } // ref https://newbedev.com/easier-way-to-to-disable-link-in-react
-          >
-            <button
-              className="login-btn"
-              color="primary"
-              type="button"
-              disabled={ this.disableBtn() }
-              onClick={ () => login({ email }) }
+      <>
+        <main className="landing-page">
+          <form className="login-form">
+            <h6 className="greetings">Olá! Faça seu login:</h6>
+            <div className="input-container">
+              { this.handleInput('email-input', 'Email', 'email', email) }
+            </div>
+            <div className="input-container">
+              { this.handleInput('password-input', 'Senha', 'password', password) }
+            </div>
+            <Link
+              to="/carteira"
+              style={ (this.disableBtn()) ? { pointerEvents: 'none' } : null } // ref https://newbedev.com/easier-way-to-to-disable-link-in-react
             >
-              Entrar
-            </button>
-          </Link>
-        </form>
+              <button
+                className="login-btn"
+                color="primary"
+                type="button"
+                disabled={ this.disableBtn() }
+                onClick={ () => login({ email }) }
+              >
+                Entrar
+              </button>
+            </Link>
+          </form>
+        </main>
         <footer className="image-credit">
           <a href="https://www.vecteezy.com/free-vector/finance">
             Finance Vectors by Vecteezy
           </a>
         </footer>
-      </main>
+      </>
     );
   }
 }

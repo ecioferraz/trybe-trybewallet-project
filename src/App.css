@@ -1,3 +1,87 @@
+.input-container {
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  position: relative;
+}
+
+.input-container label {
+  color: rgb(255, 255, 255);
+}
+
+.input-container :is( input, select, option ) {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(239, 239, 239);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.input-container option {
+  color: rgb(0, 0, 0)
+}
+
+.input-container input:focus {
+  border: none;
+  border-bottom: 1px solid rgb(0, 215, 117);
+  outline: none;
+ }
+
+.input-container input::placeholder {
+  color:rgb(255, 255, 255, .3);
+  font-size: 10pt;
+}
+
+.expense-btn {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 5px 12.5px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.expense-btn:hover:enabled {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.expense-btn:disabled {
+  cursor: default;
+  opacity: .8;
+}
+
+@media (min-width: 768px) {
+  .expense-btn {
+    padding: 5px 15px;
+  }
+}
+
+.image-credit {
+  bottom: 5px;
+  font-size: 12px;
+  position: fixed;
+  right: 10px;
+}
+
+.image-credit a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
 /* header {
   background-color: #f1f1f1;
   display: flex;

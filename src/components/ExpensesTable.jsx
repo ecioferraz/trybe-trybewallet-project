@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Button, Table } from 'reactstrap';
 import { removeExpense as removeExpenseAction } from '../actions';
+import '../styles/expensestable.css';
 
 class ExpensesTable extends Component {
   render() {
@@ -30,14 +31,14 @@ class ExpensesTable extends Component {
               <td>{ Number(exchangeRates[currency].ask * value).toFixed(2) }</td>
               <td>Real</td>
               <td>
-                <Button
+                {/* <Button
                   type="button"
                   className="expenseBtn"
                   color="primary"
                   size="sm"
                 >
                   Editar
-                </Button>
+                </Button> */}
                 <Button
                   type="button"
                   data-testid="delete-btn"

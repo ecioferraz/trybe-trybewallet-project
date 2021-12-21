@@ -53,30 +53,40 @@ class Expenses extends React.Component {
   }
 
   handleTextInput({ label, type, name }, value, onChange) {
-    return (<TextInput
-      labelText={ label }
-      type={ type }
-      name={ name }
-      value={ value }
-      onChange={ onChange }
-    />);
+    return (
+      <div>
+        <TextInput
+          className="expenses-input"
+          labelText={ label }
+          name={ name }
+          onChange={ onChange }
+          type={ type }
+          value={ value }
+        />
+      </div>
+    );
   }
 
   handleSelectInput({ label, name }, value, options, onChange) {
-    return (<SelectInput
-      labelText={ label }
-      name={ name }
-      value={ value }
-      options={ options }
-      onChange={ onChange }
-    />);
+    return (
+      <div>
+        <SelectInput
+          className="expenses-input select-input"
+          labelText={ label }
+          name={ name }
+          onChange={ onChange }
+          options={ options }
+          value={ value }
+        />
+      </div>
+    );
   }
 
   render() {
     const { value, description, currency, method, tag } = this.state;
     const { currencies } = this.props;
     return (
-      <form onSubmit={ this.handleSubmit } className="expenses-form">
+      <form onSubmit={ this.handleSubmit } className="expenses-form input-container">
         {/* <fieldset className="expensesInput"> */}
         { this.handleTextInput(valueInput, value, this.handleChange)}
         { this.handleTextInput(descriptionInput, description, this.handleChange) }
@@ -89,7 +99,7 @@ class Expenses extends React.Component {
         { this.handleSelectInput(
           tagInput, tag, tags, this.handleChange,
         ) }
-        <button type="submit" className="expenseBtn">
+        <button className="expense-btn" disabled={ !value || !description } type="submit">
           Adicionar despesa
         </button>
         {/* </fieldset> */}

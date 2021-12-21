@@ -5,14 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: flex-start;
   height: 100vh;
+  justify-content: flex-start;
 }
 
 .login-form {
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   display: flex;
@@ -20,8 +20,8 @@
   height: 35vh;
   justify-content: space-evenly;
   margin: 0 100px 0 150px;
-  padding: 30px 45px 10px 45px;
   -webkit-backdrop-filter: blur(6px);
+  padding: 30px 45px 10px;
 }
 
 .greetings {
@@ -29,79 +29,38 @@
   margin: 0;
 }
 
-.input-container {
-  border: none;
-  box-sizing: border-box;
-  outline: none;
-  padding: 0;
-  position: relative;
-}
-
-.input-container input { 
-  background: transparent;
-  border: none;
-  border-bottom: solid 1px rgb(239, 239, 239);
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  outline: none;
-  width: 100%;
-}
-
-.input-container input:focus{ 
-  border:none;	
-  border-bottom:1px solid rgb(231, 76, 60);
-  outline:none;
- }
-
- .input-container input::placeholder {
-   color:rgb(255, 255, 255, .3);
-   font-size: 10pt;
- }
-
  /* https://getcssscan.com/css-buttons-examples */
- .login-btn {
-   background-color: initial;
-   background-image: linear-gradient(-180deg, rgb(0, 215, 117), rgb(0, 189, 104));
-   border: 0;
-   border-radius: 5px;
-   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-   color: rgb(255, 255, 255);
-   cursor: pointer;
-   display: inline-block;
-   font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
-   height: 38px;
-   outline: 0;
-   overflow: hidden;
-   padding: 0 20px;
-   pointer-events: auto;
-   position: relative;
-   text-align: center;
-   touch-action: manipulation;
-   user-select: none;
-   vertical-align: top;
-   white-space: nowrap;
-   width: 100%;
-   z-index: 9;
-   -webkit-user-select: none;
- }
- 
- .login-btn:hover:enabled {
-   background: #00bd68;
- }
-
- .login-btn:disabled {
-   cursor: default;
-   opacity: .8;
- }
-
-.image-credit {
-  bottom: 5px;
-  font-size: 12px;
-  position: fixed;
-  right: 10px;
+.login-btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, rgb(0, 215, 117), rgb(0, 189, 104));
+  border: 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, Helvetica Neue, Arial,sans-serif;
+  height: 38px;
+  outline: 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
 }
 
-.image-credit a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+.login-btn:disabled {
+  cursor: default;
+  opacity: .8;
+}
+
+.login-btn:hover:enabled {
+  background: #00bd68;
 }

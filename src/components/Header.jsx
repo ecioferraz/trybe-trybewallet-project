@@ -15,9 +15,9 @@ class Header extends Component {
       <header>
         <h1>TrybeWallet</h1>
         <ul className="user-info">
-          <li data-testid="email-field">{ email }</li>
-          <li data-testid="total-field">{ (totalExpenses).toFixed(2) }</li>
-          <li data-testid="header-currency-field">BRL</li>
+          <li data-testid="email-field">{ email } email@email.com</li>
+          <li data-testid="total-field">{ (totalExpenses).toFixed(2) } BRL</li>
+          <li hidden data-testid="header-currency-field">BRL</li>
         </ul>
       </header>
     );

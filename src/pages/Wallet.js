@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import { fetchAPI } from '../actions';
 import Expenses from '../components/Expenses';
 import ExpensesTable from '../components/ExpensesTable';
+import '../styles/wallet.css';
 
 class Wallet extends React.Component {
   componentDidMount() {
@@ -16,9 +17,14 @@ class Wallet extends React.Component {
     const { expenses } = this.props;
     return (
       <>
-        <Header />
-        <Expenses />
-        { expenses.length > 0 && <ExpensesTable /> }
+        <main className="expenses-page">
+          <Header />
+          <Expenses />
+          { expenses.length > 0 && <ExpensesTable /> }
+        </main>
+        <footer className="image-credit">
+          <a href="https://www.vecteezy.com/free-vector/finance">Finance Vectors by Vecteezy</a>
+        </footer>
       </>
     );
   }

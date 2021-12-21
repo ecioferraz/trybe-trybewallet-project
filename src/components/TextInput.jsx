@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 export default class TextInput extends Component {
   render() {
-    const { labelText, type, name, value,
+    const { className, labelText, type, name, value,
       onChange, placeholder, dataTestId } = this.props;
 
     return (
@@ -13,6 +13,7 @@ export default class TextInput extends Component {
           {' '}
         </label>
         <input
+          className={ className }
           type={ type }
           name={ name }
           value={ value }
@@ -27,6 +28,7 @@ export default class TextInput extends Component {
 }
 
 TextInput.propTypes = {
+  className: PropTypes.string.isRequired,
   labelText: PropTypes.string,
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

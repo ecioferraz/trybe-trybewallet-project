@@ -11,13 +11,13 @@
 }
 
 .select-input::after {
+  color: rgb(0, 0, 0);
   margin-top: 8px;
-  color: rgb(0, 0, 0)
 }
 
 .expenses-form button {
-  font-size: 14px;
   background-color: #13aa52;
   border: 1px solid #13aa52;
+  font-size: 14px;
 }
 

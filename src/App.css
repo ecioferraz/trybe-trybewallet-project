@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Secular+One&display=swap');
+
+* {
+  font-family: 'Secular One', sans-serif;
+}
+
 .input-container {
   border: none;
   box-sizing: border-box;
@@ -41,7 +48,6 @@
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
   outline: none;
   outline: 0;
@@ -78,65 +84,10 @@
 }
 
 .image-credit a {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0, .8);
   text-decoration: none;
 }
 
-/* header {
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem 0;
-} */
-
-/* ul {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-} */
-
-/* .logo {
-  flex: 0 1 100%;
-} */
-
-/* .user-info {
-  flex: 0 1 30%;
-} */
-
-/* .login-form {
-  height: 100%;
-  margin: auto;
-  max-width: 330px;
-  padding: 15px;
-  width: 100%;
-} */
-
-/* .login-form .loginBtn {
-  margin-top: 10px;
-  width: 100%;
-} */
-
-/* .expenses-form {
-  background-color: #f1f1f1;
-} */
-
-/* .expensesInput {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 25px;
-} */
-
-/* .expensesInput input , select {
-  max-width: 530px;
-} */
-
-/* .expensesInput button {
-  max-height: 30px;
-} */
-
-/* .expenseBtn {
-  margin-right: 10px;
-} */
+.image-credit a:hover {
+  color:rgb(0, 0, 0);
+}

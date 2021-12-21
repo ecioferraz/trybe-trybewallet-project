@@ -87,7 +87,7 @@ class Expenses extends React.Component {
     const { currencies } = this.props;
     return (
       <form onSubmit={ this.handleSubmit } className="expenses-form input-container">
-        {/* <fieldset className="expensesInput"> */}
+
         { this.handleTextInput(valueInput, value, this.handleChange)}
         { this.handleTextInput(descriptionInput, description, this.handleChange) }
         { this.handleSelectInput(
@@ -102,7 +102,6 @@ class Expenses extends React.Component {
         <button className="expense-btn" disabled={ !value || !description } type="submit">
           Adicionar despesa
         </button>
-        {/* </fieldset> */}
       </form>
     );
   }
